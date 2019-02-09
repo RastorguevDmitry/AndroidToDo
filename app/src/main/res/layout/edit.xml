@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/listcolor"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/todo_edit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:text="@string/todo_confirmandexit"
+            android:textSize="15sp"
+            android:layout_gravity="right"
+            android:layout_weight="1">
+        </Button>
+
+        <Button
+            android:id="@+id/todo_edit_and_add"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:text="@string/todo_confirmandadd"
+            android:textSize="15sp"
+            android:layout_gravity="right"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/todo_edit_summary"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:hint="заголовок"
+        android:textSize="25sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:clickable="true">
+    </EditText>
+
+    <Button
+        android:id="@+id/ViewData"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="right"
+        android:textSize="25sp">
+    </Button>
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/category"
+        android:gravity="center_vertical"
+        android:textSize="25sp"
+        android:spinnerMode="dialog"
+        android:touchscreenBlocksFocus="true"
+        />
+
+    <EditText
+        android:id="@+id/todo_edit_description"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:gravity="center_horizontal|top"
+        android:hint="описание" >
+    </EditText>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ФОТО"
+        android:textSize="25sp"
+        android:id="@+id/flashcontrol"
+        android:onClick="onClickPicture"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <SurfaceView
+        android:id="@+id/ivcamera"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+    </SurfaceView>
+
+
+</LinearLayout>

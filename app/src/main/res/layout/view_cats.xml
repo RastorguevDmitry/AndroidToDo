@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/listcolor"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:id="@+id/spinner"
+            android:layout_width="189dp"/>
+
+        <Spinner
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:layout_weight="3"
+            android:id="@+id/spinnerOfShop"
+            android:layout_width="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/spisok_add_summary"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="новая запись"
+            android:textSize="25sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            android:layout_weight="1"        >
+        </EditText>
+
+        <Button
+            android:id="@+id/spisok_add_button"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:textSize="25sp"
+            android:hint="+"
+            android:layout_weight="5"  >
+        </Button>
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/list_category"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        >
+    </ListView>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+
+        >
+    </ListView>
+
+
+</LinearLayout>
